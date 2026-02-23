@@ -30,8 +30,6 @@
 
 ## 📝 Sobre o Projeto
 
-## 📝 Sobre o Projeto
-
 Este projeto foi desenvolvido pelos desenvolvedores Ana Flávia e Miguel Matins. Ele é um portfólio profissional interativo, desenvolvido em Vue 3 com TypeScript, com o objetivo de apresentar nossas respectivas experiências, projetos e competências técnicas de forma diferenciada e memorável. Ele foi concebido não apenas como uma vitrine de trabalhos realizados, mas como uma demonstração prática das nossas habilidades em arquitetura front-end, organização modular, roteamento, gerenciamento de estado e construção de interfaces temáticas.
 
 A motivação para sua criação surgiu da percepção de que muitos portfólios profissionais seguem um padrão visual muito semelhante e pouco interativo. A proposta deste projeto é romper com esse modelo tradicional ao incorporar uma interface inspirada em terminais clássicos, como o IBM PC 5150, combinando estética retrô com tecnologias modernas. Essa abordagem permite transformar a navegação em uma experiência imersiva, incluindo comandos no estilo DOS, efeitos visuais de CRT e transições entre modos de interface.
