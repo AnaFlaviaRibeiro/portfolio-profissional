@@ -1,5 +1,5 @@
 # 🏷️ Portifólio Profissional 👨‍💻
-
+<!--
 > [!NOTE]
 > Breve descrição do projeto. **Foque no principal valor/benefício.**
 > Crie uma **logo** para o projeto que represente a aplicação em questão.
@@ -18,7 +18,7 @@
     </td>
   </tr>
 </table>
-
+-->
 ## 📝 Sobre o Projeto
 
 Este projeto foi desenvolvido pelos desenvolvedores Ana Flávia e Miguel Matins. Ele é um portfólio profissional interativo, desenvolvido em Vue 3 com TypeScript, com o objetivo de apresentar nossas respectivas experiências, projetos e competências técnicas de forma diferenciada e memorável. Ele foi concebido não apenas como uma vitrine de trabalhos realizados, mas como uma demonstração prática das nossas habilidades em arquitetura front-end, organização modular, roteamento, gerenciamento de estado e construção de interfaces temáticas.
