@@ -1,11 +1,70 @@
 <template>
-    <div class="crt terminal">
-        <h2>Contatos</h2>
-      <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+  <div class="crt terminal contatos-retro">
+    <h2>CONTATOS</h2>
+    <p class="contatos-retro__intro">
+      Envie uma mensagem pelo formulário ou use os links abaixo.
+    </p>
+
+    <div class="contatos-retro__links">
+      <p class="contatos-retro__item">
+        <span class="contatos-retro__label">&gt; E-mail:</span>
+        <a href="mailto:anaflavia753@gmail.com" class="contatos-retro__link">anaflavia753@gmail.com</a>
+      </p>
+      <p class="contatos-retro__item">
+        <span class="contatos-retro__label">&gt; LinkedIn:</span>
+        <a
+          href="https://www.linkedin.com/in/ana-fl%C3%A1via-de-souza-ribeiro-67a4b7224/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contatos-retro__link"
+        >Ana Flávia de Souza Ribeiro</a>
+      </p>
+      <p class="contatos-retro__item">
+        <span class="contatos-retro__label">&gt; GitHub:</span>
+        <a
+          href="https://github.com/AnaFlaviaRibeiro"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contatos-retro__link"
+        >github.com/AnaFlaviaRibeiro</a>
+      </p>
     </div>
-  </template>
+  </div>
+</template>
 
-  <script>
-  import '../../../assets/crt.css'
+<script setup lang="ts">
+import "../../../assets/crt.css";
+</script>
 
-  </script>
+<style scoped>
+.contatos-retro__intro {
+  margin: 0 0 1rem;
+  line-height: 1.5;
+}
+
+.contatos-retro__links {
+  margin: 0;
+}
+
+.contatos-retro__item {
+  margin: 0 0 0.75rem;
+  line-height: 1.5;
+}
+
+.contatos-retro__item:last-child {
+  margin-bottom: 0;
+}
+
+.contatos-retro__label {
+  margin-right: 0.5ch;
+}
+
+.contatos-retro__link {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.contatos-retro__link:hover {
+  text-shadow: 0 0 8px var(--terminal-glow, rgba(0, 255, 65, 0.5));
+}
+</style>

@@ -20,17 +20,20 @@ const LayoutComponent = computed(() =>
   layoutName.value === "modern" ? ModernLayout : RetroLayout
 );
 
+const showBootLoading = computed(() => layoutName.value === "retro");
+
 watch(
   layoutName,
   (name) => {
     document.body.classList.toggle("layout-retro-body", name === "retro");
+    document.body.classList.toggle("layout-modern-body", name === "modern");
   },
   { immediate: true }
 );
 </script>
 
 <template>
-  <BootLoading :visible="isBooting" :minDurationMs="900" />
+  <BootLoading v-if="showBootLoading" :visible="isBooting" :minDurationMs="900" />
 
   <component :is="LayoutComponent" />
 </template>

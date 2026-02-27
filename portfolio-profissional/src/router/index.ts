@@ -6,28 +6,28 @@ const router = createRouter({
   routes: [
     {
       path: "/",
-      component: () => import("../views/HomeViewOld.vue"),
-      meta: { layout: "retro" },
+      component: () => import("../views/LayoutAwareView.vue"),
+      meta: { layout: "retro", page: "home" },
     },
     {
       path: "/sobre-mim",
-      component: () => import("../app/module/sobremim/SobreMimViewOld.vue"),
-      meta: { layout: "retro" },
+      component: () => import("../views/LayoutAwareView.vue"),
+      meta: { layout: "retro", page: "sobremim" },
     },
     {
       path: "/projetos",
-      component: () => import("../app/module/projetos/ProjetosViewOld.vue"),
-      meta: { layout: "retro" },
+      component: () => import("../views/LayoutAwareView.vue"),
+      meta: { layout: "retro", page: "projetos" },
     },
     {
       path: "/experiencias",
-      component: () => import("../app/module/experiencias/ExperienciasViewOld.vue"),
-      meta: { layout: "retro" },
+      component: () => import("../views/LayoutAwareView.vue"),
+      meta: { layout: "retro", page: "experiencias" },
     },
     {
       path: "/contatos",
-      component: () => import("../app/module/contatos/ContatosViewOld.vue"),
-      meta: { layout: "retro" },
+      component: () => import("../views/LayoutAwareView.vue"),
+      meta: { layout: "retro", page: "contatos" },
     },
   ],
 });

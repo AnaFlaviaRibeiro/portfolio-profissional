@@ -56,9 +56,23 @@ const {
 </script>
 
 <style scoped>
+.layout-retro {
+  width: 100%;
+  min-height: 100vh;
+}
+
 .layout-retro__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   padding: 0 1rem 2rem;
   min-height: 60vh;
+}
+
+.layout-retro__main :deep(> *) {
+  width: 100%;
+  /* max-width: 900px; */
 }
 
 .layout-retro__sentinel {
