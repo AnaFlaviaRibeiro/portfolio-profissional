@@ -2,7 +2,6 @@
   <div class="layout-modern layout-github">
     <aside class="layout-github__sidebar">
       <div class="layout-github__profile">
-        <!-- Avatar: para usar sua foto, adicione <img src="/sua-foto.jpg" alt="Sua foto" /> dentro de .layout-github__avatar -->
         <div class="layout-github__avatar" aria-hidden="true">
           <img src="../assets/images/foto_ana_flavia.jpeg" />
         </div>

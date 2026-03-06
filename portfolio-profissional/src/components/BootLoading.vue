@@ -64,7 +64,8 @@ onBeforeUnmount(() => {
   font-size: 16px;
   line-height: 1.5;
   text-shadow: 0 0 6px rgba(0, 255, 0, 0.55);
-  border: 1px solid rgba(0, 255, 0, 0.25);
+  border: 2px solid rgba(0, 255, 0, 0.45);
+  box-shadow: 0 0 24px rgba(0, 255, 0, 0.15);
 }
 
 .boot__text {

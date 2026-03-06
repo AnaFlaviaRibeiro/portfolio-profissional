@@ -1,6 +1,6 @@
 <template>
   <div class="xmodem-overlay" @keydown.enter="onEnter">
-    <div class="terminal xmodem-box">
+    <div class="terminal xmodem-box layout-retro__xmodem">
       <p class="xmodem-line">&gt; xmodem portfolio.zip</p>
       <p class="xmodem-line">Waiting for sender...</p>
       <template v-if="downloading">
@@ -61,13 +61,22 @@ onMounted(() => {
   z-index: 10000;
   display: grid;
   place-items: center;
-  background: rgba(0, 0, 0, 0.95);
+  background: rgba(0, 0, 0, 0.92);
 }
 
+/* Segue o tema do layout retro (variáveis e bordas) */
 .xmodem-box {
   min-width: 320px;
   max-width: 90vw;
-  padding: 2rem;
+  padding: 2rem 2.5rem;
+  background-color: var(--terminal-bg, #0a0a0a);
+  color: var(--terminal-fg, #00ff41);
+  font-family: var(--font-terminal, "IBM Plex Mono", monospace);
+  border: 2px solid var(--terminal-border, rgba(0, 255, 65, 0.4));
+  box-shadow:
+    0 0 24px var(--terminal-glow, rgba(0, 255, 65, 0.15)),
+    inset 0 0 20px rgba(0, 255, 65, 0.03);
+  text-shadow: 0 0 8px var(--terminal-glow, rgba(0, 255, 65, 0.5));
 }
 
 .xmodem-line {
@@ -82,7 +91,7 @@ onMounted(() => {
 .xmodem-bar-wrap {
   margin: 1rem 0;
   height: 24px;
-  border: 1px solid var(--terminal-border, rgba(0, 255, 65, 0.25));
+  border: 2px solid var(--terminal-border, rgba(0, 255, 65, 0.4));
   background: rgba(0, 0, 0, 0.5);
   overflow: hidden;
 }

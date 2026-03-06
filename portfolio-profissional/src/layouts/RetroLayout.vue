@@ -57,34 +57,47 @@ const {
 
 <style scoped>
 .layout-retro {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   min-height: 100vh;
+  box-sizing: border-box;
 }
 
 .layout-retro__main {
+  flex: 1 1 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 0 1rem 2rem;
-  min-height: 60vh;
+  padding: 0 1.5rem 2.5rem;
+  min-height: 0; /* permite encolher para scroll */
+  overflow-y: auto;
+  box-sizing: border-box;
 }
 
 .layout-retro__main :deep(> *) {
   width: 100%;
-  /* max-width: 900px; */
+  max-width: 900px;
+  box-sizing: border-box;
 }
 
 .layout-retro__sentinel {
   height: 1px;
   width: 100%;
+  flex-shrink: 0;
   pointer-events: none;
   visibility: hidden;
 }
 
 .layout-retro__prompt {
-  margin: 1rem;
-  padding: 1rem 1.5rem;
+  flex-shrink: 0;
+  align-self: center;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 1.5rem 1.5rem;
+  padding: 1.25rem 1.75rem;
+  box-sizing: border-box;
 }
 
 .layout-retro__command-line {

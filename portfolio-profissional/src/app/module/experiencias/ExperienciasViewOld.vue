@@ -1,5 +1,4 @@
 <template>
-  <br>
   <div class="crt terminal experiencias-retro">
     <h2>EXPERIÊNCIAS</h2>
 
